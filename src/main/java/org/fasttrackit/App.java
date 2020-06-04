@@ -8,15 +8,17 @@ public class App
     {
         Date expirationDate = new Date();
 
-        AnimalFood favoriteFood = new AnimalFood("Pedigree", 15.0, 10.0, expirationDate, 50);
-        Activity favoriteActivity = new Activity("walk");
+        AnimalFood food = new AnimalFood("Purina", 15.0, 10.0, expirationDate, 50);
+        AnimalFood favoriteFood = new AnimalFood("Purina", 20.0, 15.0, expirationDate, 30);
+        Activity activity = new Activity("running");
+        Activity favoriteActivity = new Activity("running");
         Animal dog = new Animal("Odin", 3, 10, 2, 9, favoriteFood, favoriteActivity);
         Rescuer rescuer = new Rescuer("Andrei", 1.000);
         Veterinary vet = new Veterinary("Popescu", "Chirurgie veterinara");
         Game game = new Game(rescuer, dog, vet);
 
-        rescuer.feed(dog, favoriteFood);
-        rescuer.activity(dog, favoriteActivity);
+        //rescuer.feed(dog, food);
+        rescuer.activity(dog, activity);
 
         System.out.println(dog.hungerLevel + " " + dog.spiritLevel);
     }
