@@ -2,8 +2,12 @@ package org.fasttrackit;
 
 public class Veterinary {
 
-    Veterinary(String name, String specialty) {
+    String name;
+    String specialty;
 
+    Veterinary(String name, String specialty) {
+        this.name = name;
+        this.specialty = specialty;
     }
 
 }

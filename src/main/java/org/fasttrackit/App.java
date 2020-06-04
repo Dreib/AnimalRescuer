@@ -9,11 +9,15 @@ public class App
         Date expirationDate = new Date();
 
         AnimalFood favoriteFood = new AnimalFood("Pedigree", 15.0, 10.0, expirationDate, 50);
-        Activity favoriteActivity = new Activity("Walking");
+        Activity favoriteActivity = new Activity("walk");
         Animal dog = new Animal("Odin", 3, 10, 2, 9, favoriteFood, favoriteActivity);
         Rescuer rescuer = new Rescuer("Andrei", 1.000);
         Veterinary vet = new Veterinary("Popescu", "Chirurgie veterinara");
         Game game = new Game(rescuer, dog, vet);
 
+        rescuer.feed(dog, favoriteFood);
+        rescuer.activity(dog, favoriteActivity);
+
+        System.out.println(dog.hungerLevel + " " + dog.spiritLevel);
     }
 }

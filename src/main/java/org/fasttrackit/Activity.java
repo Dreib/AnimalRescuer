@@ -2,8 +2,10 @@ package org.fasttrackit;
 
 public class Activity {
 
-    Activity(String name) {
+    String name;
 
+    Activity(String name) {
+        this.name = name;
     }
 
 }
