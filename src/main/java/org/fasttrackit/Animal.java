@@ -7,7 +7,7 @@ public class Animal {
     int healthLevel;
     int hungerLevel;
     int spiritLevel;
-    String favoriteFood;
-    String favoriteActivity;
+    AnimalFood favoriteFood;
+    Activity favoriteActivity;
 
 }

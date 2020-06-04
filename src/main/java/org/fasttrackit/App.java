@@ -8,6 +8,10 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        Animal dog = new Animal();
+
+        dog.age = 3;
+        dog.name = "Odin";
+
     }
 }
