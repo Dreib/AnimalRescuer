@@ -1,26 +1,19 @@
 package org.fasttrackit;
 
-/**
- * Hello world!
- *
- */
+import java.util.Date;
+
 public class App 
 {
     public static void main( String[] args )
     {
-        Animal dog = new Animal();
-        Activity activity = new Activity();
-        AnimalFood animalFood = new AnimalFood();
-        Rescuer rescuer = new Rescuer();
-        Veterinary vet = new Veterinary();
-        Game game = new Game();
+        Date expirationDate = new Date();
 
-        dog.age = 3;
-        dog.name = "Odin";
-        dog.healthLevel = 10;
-        dog.hungerLevel = 1;
-        dog.spiritLevel = 10;
-
+        AnimalFood favoriteFood = new AnimalFood("Pedigree", 15.0, 10.0, expirationDate, 50);
+        Activity favoriteActivity = new Activity("Walking");
+        Animal dog = new Animal("Odin", 3, 10, 2, 9, favoriteFood, favoriteActivity);
+        Rescuer rescuer = new Rescuer("Andrei", 1.000);
+        Veterinary vet = new Veterinary("Popescu", "Chirurgie veterinara");
+        Game game = new Game(rescuer, dog, vet);
 
     }
 }

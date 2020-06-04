@@ -2,7 +2,8 @@ package org.fasttrackit;
 
 public class Veterinary {
 
-    String name;
-    String specialty;
+    Veterinary(String name, String specialty) {
+
+    }
 
 }

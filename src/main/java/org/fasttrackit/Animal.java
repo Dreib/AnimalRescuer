@@ -2,12 +2,9 @@ package org.fasttrackit;
 
 public class Animal {
 
-    String name;
-    int age;
-    int healthLevel;
-    int hungerLevel;
-    int spiritLevel;
-    AnimalFood favoriteFood = new AnimalFood();
-    Activity favoriteActivity = new Activity();
+    Animal(String name, int age, int healthLevel, int hungerLevel, int spiritLevel,
+           AnimalFood favoriteFood, Activity favoriteActivity) {
+
+    }
 
 }
