@@ -7,7 +7,7 @@ public class Animal {
     int healthLevel;
     int hungerLevel;
     int spiritLevel;
-    AnimalFood favoriteFood;
-    Activity favoriteActivity;
+    AnimalFood favoriteFood = new AnimalFood();
+    Activity favoriteActivity = new Activity();
 
 }

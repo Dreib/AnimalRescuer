@@ -7,7 +7,7 @@ public class AnimalFood {
     String name;
     double price;
     double quantity;
-    Date expirationDate;
+    Date expirationDate = new Date();
     int supply;
 
 }
